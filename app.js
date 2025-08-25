@@ -25,6 +25,18 @@ const html = `
         });
       }, 500);
     </script>
+    <script>
+  // Parse query params
+  const params = new URLSearchParams(window.location.search);
+
+  // Example: read ?name=Alice
+  const name = params.get("name") || "Guest";
+
+  // Update the page
+  window.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("section").textContent = `Hello, ${name}! 🎉`;
+  });
+</script>
     <style>
       @import url("https://p.typekit.net/p.css?s=1&k=vnd5zic&ht=tk&f=39475.39476.39477.39478.39479.39480.39481.39482&a=18673890&app=typekit&e=css");
       @font-face {
