@@ -34,7 +34,7 @@ const html = `
 
   // Update the page
   window.addEventListener("DOMContentLoaded", () => {
-    document.querySelector("section").textContent = "Hello, ${name}! 🎉";
+    document.querySelector("section").textContent = "Hello, $name! 🎉";
   });
 </script>
     <style>
