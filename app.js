@@ -34,6 +34,13 @@ const html = `
 
         // Put the message into <section>
         document.querySelector("section").textContent = msg;
+
+        // Generate QR code for the message
+        new QRCode(document.getElementById("qrcode"), {
+          text: msg,
+          width: 200,
+          height: 200
+        });
   });
 </script>
     <style>
@@ -67,6 +74,7 @@ const html = `
     <section>
       Hello from Render!
     </section>
+     <div id="qrcode"></div>
   </body>
 </html>
 `
