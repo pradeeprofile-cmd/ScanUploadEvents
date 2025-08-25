@@ -15,6 +15,7 @@ const html = `
   <head>
     <title>Hello from Render!</title>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script>
       setTimeout(() => {
         confetti({
